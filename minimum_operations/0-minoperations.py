@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ about minimum operations """
 
+
 def minOperations(n):
     """determines the lowest number of operations"""
     operations = 0
