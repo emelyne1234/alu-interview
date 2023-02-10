@@ -8,7 +8,7 @@ def minOperations(n):
     x = 2
     while n > 1:
         while n % x == 0:
-            operations += 1
+            operations += x
             n /= x
         x += 1
     return operations
