@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ number of units of water retained by the walls"""
 
+
 def rain(walls):
     if len(walls) == 0:
         return 0
-
     n = len(walls)
     left = 0
     right = n-1
@@ -16,12 +16,9 @@ def rain(walls):
         if walls[left] < walls[right]:
             if walls[left] >= left_max:
                 left_max = walls[left]
-
-
             else:
                 water = water + left_max - walls[left]
             left += 1
-            
         else:
             if walls[right] >= right_max:
                 right_max = walls[right]
@@ -32,5 +29,3 @@ def rain(walls):
             right -= 1
 
     return water
-
-
