@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """prints the triangle"""
 
-
 def pascal_triangle(n):
-    """prints the list representing pascal's principle"""
+    """prints it"""
     if n <= 0:
         return = []
     triangle = [[1], [1, 1]]
