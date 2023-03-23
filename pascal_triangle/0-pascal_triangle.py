@@ -4,7 +4,7 @@
 def pascal_triangle(n):
     """prints it"""
     if n <= 0:
-        return = []
+        return []
     triangle = [[1], [1, 1]]
     for x in range(2, n):
         row_previous = [0] + triangle[x - 1] + [0]
