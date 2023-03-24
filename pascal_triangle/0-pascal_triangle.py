@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """prints the triangle"""
 
+
 def pascal_triangle(n):
     """prints it"""
     if n <= 0:
