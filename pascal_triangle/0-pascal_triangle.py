@@ -6,8 +6,8 @@ def pascal_triangle(n):
     """prints it"""
     if n <= 0:
         return []
-    triangle = [[1], [1, 1]]
-    for x in range(2, n):
+    triangle = [[1]]
+    for x in range(1, n):
         row_previous = [0] + triangle[x - 1] + [0]
         row = []
         for y in range(0, len(row_previous) - 1):
